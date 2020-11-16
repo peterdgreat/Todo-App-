@@ -7,4 +7,11 @@ form input{
 }
 button{
   flex: 2;
+color: #97C7FF;
+  background-color: #FFFFFF;
+}
+.header{
+  background-color: #FFFFFF;
+  margin: 1em;
+
 }

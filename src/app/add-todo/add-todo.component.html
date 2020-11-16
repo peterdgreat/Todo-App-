@@ -1,6 +1,6 @@
-<form #form="ngForm"  (ngSubmit)="submit(form.value)" action="
+<form class="header" #form="ngForm"  (ngSubmit)="submit(form.value)" action="
 ">
 <input type="text"  name="title" (ngModel)="title" placeholder="Add Todo" id="">
 {{title}}
-<button type="submit">Submit</button>
+<button type="submit">Add</button>
 </form>

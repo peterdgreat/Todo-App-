@@ -17,7 +17,6 @@ todo:Todo
   submit(value:Todo){
 
     const todo={
-
       title:value.title,
       completed:false
     }
