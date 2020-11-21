@@ -1,12 +1,21 @@
-<div class="container-1">
 
+
+<div class="col-md-12 ">
   <app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
-
+  <div class="button">
+  <button class="btn btn-sm btn-info" [class.active]="filterBy=='all'"  (click)="filterBy='all'">All</button>
+  <button class="btn btn-sm btn-success" [class.active]="filterBy==true"  (click)="filterBy=true">Completed</button>
+  <button class="btn btn-sm btn-danger" [class.active]="filterBy==false" (click)="filterBy=false">Uncompleted</button>
 </div>
-<div class="container">
 
-<div  *ngFor="let todo of todos">
+<div class="child"  *ngFor="let todo of (todos | filter:filterBy) ">
+
+
+
+
+
   <app-todo-item [data]="todo"  (deleteTodo)="delete($event)"></app-todo-item>
+
 
 </div>
 </div>

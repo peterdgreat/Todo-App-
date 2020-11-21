@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { AddTodoComponent } from './add-todo/add-todo.component';
 import { FormsModule } from '@angular/forms';
+import { TodoPipe } from './todo.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     TodoComponent,
     TodoItemComponent,
     HeaderComponent,
-    AddTodoComponent
+    AddTodoComponent,
+    TodoPipe
   ],
   imports: [
     BrowserModule,

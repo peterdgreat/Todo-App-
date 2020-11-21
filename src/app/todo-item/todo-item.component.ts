@@ -28,8 +28,8 @@ onToggle(todo:Todo){
   //Toggle on UI
   todo.completed=!this.data.completed
 //Toggle onservice
-this.todoService.toggleCompleted(todo).subscribe(todo=>console.log(todo)
-)
+//this.todoService.toggleCompleted(todo).subscribe(todo=>console.log(todo)
+//)
 }
 onDelete(todo){
   this.deleteTodo.emit(todo)

@@ -1,17 +1,21 @@
 form{
   display: flex;
+  justify-content: center;
 }
 form input{
-  flex:10;
+margin-right: 1em;
   padding: 5px;
-}
-button{
-  flex: 2;
-color: #97C7FF;
   background-color: #FFFFFF;
-}
-.header{
-  background-color: #FFFFFF;
-  margin: 1em;
+  border-color: #EB5926;
+  box-shadow: 0 0 8px 0 #EB5926;
+  outline: none;  border-radius: 15px;
 
 }
+button{
+  background: #EB5926;
+  color: #fff;
+  border-radius: 15px;
+
+  border: none;
+  box-shadow: 0px 0px 3px 1px rgb(167, 158, 158);
+  cursor: pointer;}
